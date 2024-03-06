@@ -8,12 +8,12 @@ export default function Index() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>
-                Escolha os produtos              
+                Escolha {"\n"}
+                <Text style={styles.subtitle}>os produtos</Text>
             </Text>
-            <Text style={styles.subtitle}>
+            <Text style={styles.message}>
                 Descubras receitas baseadas nos produtos que você escolheu
-            </Text>
-               
+            </Text>               
         </View>
     )
 }
