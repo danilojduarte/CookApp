@@ -10,7 +10,7 @@ export default function Index() {
             <Text style={styles.title}>
                 Escolha os produtos              
             </Text>
-            <Text style={styles.title}>
+            <Text style={styles.subtitle}>
                 Descubras receitas baseadas nos produtos que você escolheu
             </Text>
                
