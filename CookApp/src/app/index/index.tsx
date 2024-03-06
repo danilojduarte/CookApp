@@ -7,11 +7,11 @@ import { styles } from "./styles";
 export default function Index() {
     return (
         <View style={styles.container}>
-            <Text>
-                Iniciando Com React Native Na Prática
-                Danilo Duarte
-                Danilo Duarte
-
+            <Text style={styles.title}>
+                Escolha os produtos              
+            </Text>
+            <Text style={styles.title}>
+                Descubras receitas baseadas nos produtos que você escolheu
             </Text>
                
         </View>
