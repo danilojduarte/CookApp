@@ -10,8 +10,10 @@ export const styles = StyleSheet.create({
         fontSize: theme.fonts.size.heading.xl,
         lineHeight: 44,
         marginTop: 42,
+        fontFamily: theme.fonts.family.bold,
     },
     subtitle: {
-
+        fontSize: theme.fonts.size.body.md,
+        fontFamily: theme.fonts.family.regular,
     }
 })
