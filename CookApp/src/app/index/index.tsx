@@ -7,14 +7,14 @@ import { useState } from "react";
 
 
 export default function Index() {
-    const [selected, setselected] = useState<string[]>([])
+    const [selected, setSelected] = useState<string[]>([])
 
     function handleToggleSelected(value: string){
         if(selected.includes(value)) {
-            return setselected((state) => state.filter((item) => item !== value))
+            return setSelected((state) => state.filter((item) => item !== value))
         }
 
-        setselected((state) => [...state, value])
+        setSelected((state) => [...state, value])
         console.log(selected)
     }
 
