@@ -10,16 +10,15 @@ export default function Index() {
         <View style={styles.container}>
             <Text style={styles.title}>
                 Escolha {"\n"}
-                <Text style={styles.subtitle}>os produtos</Text>
+                <Text style={styles.subtitle}>Os produtos</Text>
             </Text>
             <Text style={styles.message}>
                 Descubras receitas baseadas nos produtos que você escolheu
             </Text>         
-            <ScrollView horizontal 
-            contentContainerStyle={styles.ingredients}>
-            <Ingredient />
-            <Ingredient />
-            <Ingredient />
+            <ScrollView contentContainerStyle={styles.ingredients}>
+           {Array.from({ length:100 }).map((item, index) => (
+            <Ingredient key={index} />
+           ))}
         </ScrollView>
         </View>
     )
