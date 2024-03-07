@@ -1,7 +1,7 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 
 import { styles } from "./styles";
-import { Ingredients } from "@/components/ingredient";
+import { Ingredient } from "@/components/ingredient";
 
 
 
@@ -15,7 +15,12 @@ export default function Index() {
             <Text style={styles.message}>
                 Descubras receitas baseadas nos produtos que você escolheu
             </Text>         
-            <Ingredients />
+            <ScrollView horizontal 
+            contentContainerStyle={styles.ingredients}>
+            <Ingredient />
+            <Ingredient />
+            <Ingredient />
+        </ScrollView>
         </View>
     )
 }

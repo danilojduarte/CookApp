@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native"
 import { theme } from "@/theme"
-import { CurrentRenderContext } from "@react-navigation/native"
+
 
 
 export const styles = StyleSheet.create({
