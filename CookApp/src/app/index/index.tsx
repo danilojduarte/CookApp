@@ -31,7 +31,9 @@ export default function Index() {
             <ScrollView contentContainerStyle={styles.ingredients}
             showsVerticalScrollIndicator={false}>
            {Array.from({ length:100 }).map((item, index) => (
-            <Ingredient key={index} name="Tomate" image="" selected onPress={() => handleToggleSelected(String(index))} />
+            <Ingredient key={index} name="Tomate" image="" 
+            selected={selected.includes(String(index))}
+            onPress={() => handleToggleSelected(String(index))} />
            ))}
         </ScrollView>
         </View>

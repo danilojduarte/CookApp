@@ -8,11 +8,16 @@ export type IngredientsProps = {
     selected?: boolean
 }
 
-export function Ingredient({name, image, selected = false, ...rest}: IngredientsProps & PressableProps){
+export function Ingredient({
+    name, 
+    image, 
+    selected = false, ...rest
+}: IngredientsProps & PressableProps){
     return(
-        <Pressable style={styles.container}>
+        <Pressable 
+        style={[styles.container, selected && styles.selected]} {...rest}>
             <Image source={require("@/app/assets/tomato.png")} 
-             style={styles.image}/>
+             style={styles.Image}/>
 
             <Text style={styles.title}>Maçã</Text>
         </Pressable>
